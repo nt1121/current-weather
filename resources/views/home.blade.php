@@ -10,7 +10,7 @@
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 </head>
 <body>
-    <div class="l-wrap">
+    <div class="l-wrap" id="app">
         <div class="l-header">
             <div class="p-header">
                 <div class="p-header__inner">
@@ -22,6 +22,7 @@
         </div>
         <div class="l-content">
             <div class="l-content__inner">
+                <router-view/>
             </div>
         </div>
         <div class="l-footer">
@@ -32,5 +33,6 @@
             </div>
         </div>
     </div>
+    <script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>
