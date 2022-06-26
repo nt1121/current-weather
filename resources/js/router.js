@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import Top from './components/TopComponent.vue';
+import Region from './components/RegionComponent.vue';
 import NotFound from './components/NotFoundComponent.vue';
 
 Vue.use(Router);
@@ -12,6 +13,11 @@ export default new Router({
             path: '/',
             name: 'top',
             component: Top,
+        },
+        {
+            path: '/region/:id(\\d+)',
+            name: 'region',
+            component: Region,
         },
         {
             path: '*',

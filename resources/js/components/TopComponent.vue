@@ -1,11 +1,10 @@
 <template>
-    <div>
-        <h1 class="mt-3 mb-3 clearfix">
-            <span class="float-left">全国</span>
-        </h1>
+    <div class="pt-3 pb-3">
         <div class="row">
-            <div class="col-md-4 col-sm-6 col-12 mb-3" v-for="region in regions" v-bind:key="region.id">
-                <button type="button" class="btn btn-outline-secondary btn-lg w-100 text-center">{{ region.name }}</button>
+            <div class="col-sm-6 col-12 mb-3" v-for="region in regions" v-bind:key="region.id">
+                <router-link v-bind:to="{ name: 'region', params: { id: region.id } }" class="btn btn-outline-secondary btn-lg w-100 text-center">
+                    {{ region.name }}
+                </router-link>
             </div>
         </div>
     </div>
