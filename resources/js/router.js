@@ -15,8 +15,8 @@ export default new Router({
             component: Top,
         },
         {
-            path: '/region/:id(\\d+)',
-            name: 'region',
+            path: '/regions/:id(\\d+)',
+            name: 'regions',
             component: Region,
         },
         {

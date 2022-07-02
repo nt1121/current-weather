@@ -23,7 +23,7 @@
         </div>
         <div class="l-content">
             <div class="l-content__inner">
-                <router-view/>
+                <home-component loading-img-src="{{ asset('img/loading.gif') }}"></home-component>
             </div>
         </div>
         <div class="l-footer">

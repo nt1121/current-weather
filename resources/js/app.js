@@ -38,6 +38,7 @@ import store from './store/index';
 import router from './router';
 
 if (document.getElementById('app')) {
+    Vue.component('home-component', require('./components/HomeComponent.vue').default);
     const app = new Vue({
         el: '#app',
         store,
