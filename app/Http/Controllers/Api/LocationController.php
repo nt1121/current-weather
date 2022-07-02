@@ -35,7 +35,7 @@ class LocationController extends Controller
             abort(400);
         }
         $data['description'] = $response['weather'][0]['description'];
-        $data['iconSrc'] = 'http://openweathermap.org/img/wn/' . $response['weather'][0]['icon'] . '@4x.png';
+        $data['iconSrc'] = 'https://openweathermap.org/img/wn/' . $response['weather'][0]['icon'] . '@4x.png';
         $data['temp'] = (int)floor($response['main']['temp']);
         $data['humidity'] = $response['main']['humidity'];
         $data['dateTimeText'] = date('Y年m月d日 H時i分', $response['dt']);
