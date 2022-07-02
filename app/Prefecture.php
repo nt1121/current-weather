@@ -12,4 +12,14 @@ class Prefecture extends Model
      * @var string
      */
     protected $table = 'prefectures';
+
+    public function region()
+    {
+        return $this->belongsTo('App\Region');
+    }
+
+    public function locations()
+    {
+        return $this->hasMany('App\Location');
+    }
 }

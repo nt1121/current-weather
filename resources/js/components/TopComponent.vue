@@ -5,11 +5,16 @@
         </div>
         <transition name="u-fade">
             <template v-if="!isLoading">
-                <div class="row" v-if="isLoadingSuccessful">
-                    <div class="col-sm-6 col-12 mb-3" v-for="region in regions" v-bind:key="region.id">
-                        <router-link v-bind:to="{ name: 'regions', params: { id: region.id } }" class="btn btn-outline-secondary btn-lg w-100 text-center">
-                            {{ region.name }}
-                        </router-link>
+                <div v-if="isLoadingSuccessful">
+                    <div class="mb-3 clearfix">
+                        <h1 class="float-left c-page-title">全国</h1>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-12 mb-3" v-for="region in regions" v-bind:key="region.id">
+                            <router-link v-bind:to="{ name: 'regions', params: { id: region.id } }" class="btn btn-outline-secondary btn-lg w-100 text-center">
+                                {{ region.name }}
+                            </router-link>
+                        </div>
                     </div>
                 </div>
                 <div class="c-loading-error" v-else>

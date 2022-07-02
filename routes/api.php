@@ -22,4 +22,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::middleware('throttle:60,1')->group(function () {
     Route::get('/regions', 'Api\RegionController@getAll');
     Route::get('/regions/{id}', 'Api\RegionController@findById')->where('id', '[1-9][0-9]*');
+    Route::get('/prefectures/{id}', 'Api\PrefectureController@findById')->where('id', '[1-9][0-9]*');
 });

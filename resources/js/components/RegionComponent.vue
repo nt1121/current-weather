@@ -6,13 +6,13 @@
         <transition name="u-fade">
             <template v-if="!isLoading">
                 <div v-if="isLoadingSuccessful">
-                    <h1 class="mb-3 clearfix">
-                        <span class="float-left">{{ regionName }}</span>
+                    <div class="mb-3 clearfix">
+                        <h1 class="float-left c-page-title">{{ regionName }}</h1>
                         <router-link to="/" class="btn btn-secondary float-right">全国</router-link>
-                    </h1>
+                    </div>
                     <div class="row">
                         <div class="col-sm-6 col-12 mb-3" v-for="prefecture in prefectures" v-bind:key="prefecture.id">
-                            <router-link to="/" class="btn btn-outline-secondary btn-lg w-100 text-center">
+                            <router-link v-bind:to="{ name: 'prefectures', params: { id: prefecture.id } }" class="btn btn-outline-secondary btn-lg w-100 text-center">
                                 {{ prefecture.name }}
                             </router-link>
                         </div>
