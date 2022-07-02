@@ -8,6 +8,7 @@
     <title>Current Weather</title>
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon"  href="{{ asset('/favicon.ico') }}">
 </head>
 <body>
     <div class="l-wrap" id="app">
@@ -33,6 +34,6 @@
             </div>
         </div>
     </div>
-    <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('js/app.es5.js') }}"></script>
 </body>
 </html>
