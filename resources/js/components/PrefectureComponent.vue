@@ -12,7 +12,7 @@
                     </div>
                     <div class="row">
                         <div class="col-sm-6 col-12 mb-3" v-for="location in locations" v-bind:key="location.id">
-                            <router-link to="/" class="btn btn-outline-secondary btn-lg w-100 text-center">
+                            <router-link v-bind:to="{ name: 'locations', params: { id: location.id } }" class="btn btn-outline-secondary btn-lg w-100 text-center">
                                 {{ location.name }}
                             </router-link>
                         </div>

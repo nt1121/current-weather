@@ -135,88 +135,88 @@ body {
     font-size: 14px;
 }
 
-.p-city-weather__bottom {
+.p-location-weather__bottom {
     overflow: hidden;
     margin: 0 -10px;
 }
 
-.p-city-weather__bottom-left {
+.p-location-weather__bottom-left {
     width: 220px;
     padding: 0 10px;
     float: left;
 }
 
-.p-city-weather__bottom-left-icon {
+.p-location-weather__bottom-left-icon {
     width: 100%;
     display: block;
 }
 
-.p-city-weather__bottom-left-description {
+.p-location-weather__bottom-left-description {
     font-size: 20px;
     text-align: center;
 }
 
-.p-city-weather__bottom-right {
+.p-location-weather__bottom-right {
     float: right;
     width: calc(100% - 220px);
     padding: 0 10px;
     overflow: hidden;
 }
 
-.p-city-weather__bottom-right-temperature {
+.p-location-weather__bottom-right-temperature {
     float: left;
     font-size: 24px;
     width: 50%;
 }
 
-.p-city-weather__bottom-right-temperature-number {
+.p-location-weather__bottom-right-temperature-number {
     font-weight: bold;
     font-size: 36px;
 }
 
-.p-city-weather__bottom-right-humidity {
+.p-location-weather__bottom-right-humidity {
     float: right;
     font-size: 24px;
     width: 50%;
 }
 
-.p-city-weather__bottom-right-humidity-number {
+.p-location-weather__bottom-right-humidity-number {
     font-weight: bold;
     font-size: 36px;
 }
 
 @media screen and (max-width: 599px) {
-    .p-city-weather__bottom-right-temperature {
+    .p-location-weather__bottom-right-temperature {
         width: 100%;
     }
 
-    .p-city-weather__bottom-right-humidity {
+    .p-location-weather__bottom-right-humidity {
         width: 100%;
     }
 }
 
 @media screen and (max-width: 399px) {
-    .p-city-weather__bottom-left {
+    .p-location-weather__bottom-left {
         width: 170px;
     }
 
-    .p-city-weather__bottom-right {
+    .p-location-weather__bottom-right {
         width: calc(100% - 170px);
     }
 
-    .p-city-weather__bottom-right-temperature {
+    .p-location-weather__bottom-right-temperature {
         font-size: 20px;
     }
 
-    .p-city-weather__bottom-right-temperature-number {
+    .p-location-weather__bottom-right-temperature-number {
         font-size: 30px;
     }
 
-    .p-city-weather__bottom-right-humidity {
+    .p-location-weather__bottom-right-humidity {
         font-size: 20px;
     }
 
-    .p-city-weather__bottom-right-humidity-number {
+    .p-location-weather__bottom-right-humidity-number {
         font-size: 30px;
     }
 }
